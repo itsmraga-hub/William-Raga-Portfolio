@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap");
 
 :root {
   --primary-color: #191765;
@@ -9,7 +9,7 @@
   --secondary-heading-color: #9490ff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) {
   * {
     margin: 0;
     padding: 0;
@@ -70,19 +70,20 @@
   }
 
   .text-normal {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
 
   .text-400 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
   }
 
-  header h4 {
+  header a {
     line-height: 16px;
     font-size: 18px;
     letter-spacing: 0.03em;
+    text-decoration: none;
   }
 
   header nav {
