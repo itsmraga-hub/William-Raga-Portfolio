@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #191765;
+  --primary-heading-color: #7d73fc;
+  --secondary-color: #edecff;
+  --text-color: #c8c8d4;
+  --white-color: #fff;
+  --secondary-heading-color: #9490ff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .li-color {
+    color: #f5f5ff;
+    line-height: 24px;
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 5px 0;
+    list-style-type: none;
+  }
+
+  .white {
+    color: var(--white-color);
+  }
+
+  .text-color {
+    color: var(--secondary-color);
+  }
+
+  .head-color {
+    color: var(--secondary-heading-color);
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .horizontal {
+    color: #646369;
+    margin: 30px 0;
+  }
+
+  body {
+    background-color: var(--primary-color);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .text-normal {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  .text-400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
+  header h4 {
+    line-height: 16px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+  }
+
+  header nav {
+    position: absolute;
+    left: 80.67%;
+    top: 5px;
+    width: 33.33px;
+  }
+
+  nav i:hover {
+    cursor: pointer;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  main {
+    margin: 10px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-title {
+    margin: 20px;
+  }
+
+  .my-title h1 {
+    padding: 10px 0;
+    font-size: 48px;
+    font-style: bold;
+    letter-spacing: 0.37px;
+    line-height: 72px;
+  }
+
+  .my-title p {
+    padding: 0;
+    font-size: 32px;
+    line-height: 44px;
+    vertical-align: center;
+  }
+
+  .description {
+    color: var(--text-color);
+    font-style: regular;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: top;
+    padding-bottom: 20px;
+  }
+
+  .qualifications {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .qualifications div {
+    width: 50%;
+  }
+
+  .qualifications h4 {
+    padding-bottom: 14px;
+  }
+
+  .qualifications h4:hover {
+    text-decoration: underline;
+  }
+
+  .qualifications li:hover {
+    text-decoration: underline;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+    padding-bottom: 20px;
+  }
+}
