@@ -53,6 +53,16 @@
     background-color: var(--primary-color);
   }
 
+  .white-background {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: -106px;
+    top: 50px;
+    background: var(--secondary-color);
+    filter: blur(50px);
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -127,6 +137,15 @@
   .qualifications {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .qualifications .white-background {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 339px;
+    top: 495px;
+    filter: blur(50px);
   }
 
   .qualifications div {
