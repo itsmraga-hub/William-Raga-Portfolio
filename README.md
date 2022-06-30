@@ -13,6 +13,8 @@ My first Portfolio project built with HTML, CSS and JavaScript.
 
 ## Getting Started
 
+![screenshort](portfolio2.png)
+
 ### Prerequisites
 
 - Text editor
