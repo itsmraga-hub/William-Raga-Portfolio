@@ -170,6 +170,10 @@
     overflow: hidden;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .qualifications li {
     width: 50%;
     line-height: 24px;
@@ -292,10 +296,6 @@
     align-items: center;
     font-size: 12px;
     border: none;
-  }
-
-  li {
-    list-style-type: none;
   }
 
   .btn:hover {
