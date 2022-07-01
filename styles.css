@@ -167,20 +167,18 @@
     height: 68px;
     left: 339px;
     top: 510px;
+    overflow: hidden;
   }
 
-  .qualifications div {
+  .qualifications li {
     width: 50%;
+    line-height: 24px;
+    font-size: 15px;
+    padding: 6px 0;
   }
 
   .qualifications h4 {
     padding-bottom: 20px;
-  }
-
-  .qualifications li {
-    line-height: 24px;
-    font-size: 15px;
-    padding: 6px 0;
   }
 
   .lists li {
@@ -296,8 +294,25 @@
     border: none;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .btn:hover {
     cursor: pointer;
+    background-color: #7d73fc;
+  }
+
+  .btn:active {
+    background-color: #5e42d7;
+  }
+
+  .btn:visited {
+    background-color: #5e42d7;
+  }
+
+  .btn:disabled {
+    background-color: #2a2b33;
   }
 
   button::selection {
@@ -309,7 +324,7 @@
     width: 39.61px;
     height: 482.57px;
     left: -12.04px;
-    top: 1360.71px;
+    top: 1450px;
     background-color: #edecff;
     filter: blur(20px);
     transform: rotate(-36.48deg);
@@ -320,7 +335,7 @@
     width: 70.28px;
     height: 261.6px;
     left: 327.27px;
-    top: 2180.23px;
+    top: 2284.23px;
     background: #edecff;
     filter: blur(25px);
     transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
@@ -331,7 +346,7 @@
     width: 308px;
     height: 155px;
     left: -93px;
-    top: 2960px;
+    top: 3128px;
     background: rgba(237, 236, 255, 0.3);
     filter: blur(20px);
   }
@@ -341,7 +356,7 @@
     width: 101.29px;
     height: 377.04px;
     left: 398.22px;
-    top: 3580px;
+    top: 3760px;
     background: #edecff;
     filter: blur(20px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
