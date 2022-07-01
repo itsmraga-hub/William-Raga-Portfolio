@@ -97,7 +97,7 @@
   }
 
   header a:hover {
-    text-decoration: 2px underline var(--primary-heading-color);
+    text-decoration: 2px none var(--primary-heading-color);
   }
 
   header nav {
