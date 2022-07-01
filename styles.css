@@ -33,7 +33,7 @@
   }
 
   .inter {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
   }
 
@@ -183,6 +183,10 @@
     padding: 6px 0;
   }
 
+  .lists li {
+    padding: 10px 20px 0 0;
+  }
+
   .qualifications h4:hover {
     text-decoration: 2px underline var(--secondary-heading-color);
   }
@@ -241,7 +245,6 @@
     font-size: 32px;
     width: 180px;
     margin-top: 20px;
-    margin-bottom: 0px;
   }
 
   .grid-item {
@@ -261,7 +264,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 44px;
-    margin: 50px 0px;
+    margin: 50px 0;
   }
 
   .grid-row-item img {
@@ -269,7 +272,7 @@
   }
 
   .lists {
-    margin: 15px 0px;
+    margin: 15px 0;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -281,10 +284,6 @@
   .li-border {
     border-right: 1px solid #555;
     height: 30px;
-  }
-
-  .lists li {
-    padding: 10px 20px 0px 0px;
   }
 
   .btn {
@@ -305,7 +304,7 @@
     background-color: 0 0 #5e42d7;
   }
 
-  .first .white-background{
+  .first .white-background {
     position: absolute;
     width: 39.61px;
     height: 482.57px;
@@ -322,7 +321,7 @@
     height: 261.6px;
     left: 327.27px;
     top: 2180.23px;
-    background: #EDECFF;
+    background: #edecff;
     filter: blur(25px);
     transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
   }
@@ -343,7 +342,7 @@
     height: 377.04px;
     left: 398.22px;
     top: 3580px;
-    background: #EDECFF;
+    background: #edecff;
     filter: blur(20px);
     transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
   }
