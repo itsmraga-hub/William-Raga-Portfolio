@@ -364,19 +364,31 @@
 
   .contact-form {
     margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  .flex-container-column {
     display: flex;
     flex-direction: column;
-    margin-bottom: 75px;
+    align-items: center;
   }
 
   .contact-form div h2 {
     margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 44px;
+    color: #9390ff;
+    font-weight: 500;
+  }
+
+  .contact-form div p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #f5f5ff;
   }
 
   form {
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -387,6 +399,26 @@
   }
 
   .text {
-    margin: 10px 0px;
+    margin: 10px 0px 40px 0;
+  }
+
+  footer a {
+    color: #ebebff;
+    text-decoration: none;
+    line-height: 28px;
+    font-size: 20px;
+  }
+
+  footer a:hover {
+    text-decoration: 2px underline var(--primary-heading-color);
+  }
+
+  .black-border {
+    background-color: black;
+    width: 150px;
+    height: 1px;
+    /* color: black; */
+    margin: 25px auto;
+
   }
 }
