@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .li-color {
@@ -59,6 +60,8 @@
 
 body {
   background-color: var(--primary-color);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .white-background {
@@ -170,7 +173,7 @@ hr:hover {
   position: absolute;
   width: 68px;
   height: 68px;
-  left: 280px;
+  left: 270px;
   top: 510px;
   overflow: hidden;
 }
@@ -324,50 +327,53 @@ button::selection {
   background-color: 0 0 #5e42d7;
 }
 
-.first .white-background {
-  position: absolute;
-  width: 39.61px;
-  height: 482.57px;
-  left: -12.04px;
-  top: 1450px;
-  background-color: #edecff;
-  filter: blur(20px);
-  transform: rotate(-36.48deg);
+.first-white-background {
+  background-image: url(background/ellipse-c.png);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 250px;
+  margin-left: -30px;
 }
 
-.second .white-background {
-  position: absolute;
-  width: 70.28px;
-  height: 261.6px;
-  left: 327.27px;
-  top: 2284.23px;
-  background: #edecff;
-  filter: blur(25px);
-  transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
-  overflow: hidden;
+.first {
+  margin-left: 30px;
 }
 
-.third .white-background {
-  position: absolute;
-  width: 308px;
-  height: 155px;
-  left: -93px;
-  top: 3128px;
-  background: rgba(237, 236, 255, 0.3);
-  filter: blur(20px);
+.second-white-background {
+  background-image: url(background/ellipse-d.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 240px;
+  z-index: -1;
+  margin-right: -30px;
 }
 
-.fourth .white-background {
-  position: absolute;
-  width: 101.29px;
-  object-fit: cover;
-  height: 377.04px;
-  left: 398.22px;
-  top: 3760px;
-  background: #edecff;
-  filter: blur(20px);
-  transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
-  overflow: hidden;
+.second {
+  margin-right: 30px;
+}
+
+.third-white-background {
+  background-image: url(background/ellipse-e.png);
+  background-repeat: no-repeat;
+  background-position: 0% 42%;
+  background-size: 300px;
+  margin-left: -30px;
+}
+
+.third {
+  margin-left: 30px;
+}
+
+.fourth-white-background {
+  background-image: url(background/ellipse-f.png);
+  background-repeat: no-repeat;
+  background-position: 100% 55%;
+  background-size: 300px;
+  margin-right: -30px;
+}
+
+.fourth {
+  margin-right: 30px;
 }
 
 .contact-form {
