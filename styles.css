@@ -367,10 +367,17 @@
     margin-bottom: 75px;
   }
 
-  .flex-container-column {
+  .flex-container-column,
+  .footer .flex-container-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .flex-container-column {
+    margin-top: 40px;
+    align-items: center;
+    gap: 24px;
   }
 
   .contact-form div h2 {
@@ -387,19 +394,19 @@
     color: #f5f5ff;
   }
 
-  form {
-    margin-top: 40px;
-    align-items: center;
-  }
-
-  input {
+  .input-cls {
     width: 100%;
-    height: 40px;
-    margin: 10px 0px;
+    padding: 16px;
+    color: #191765;
+    font-size: 15px;
   }
 
-  .text {
-    margin: 10px 0px 40px 0;
+  .message-box {
+    height: auto;
+  }
+
+  .submit-btn {
+    margin-top: 16px;
   }
 
   footer a {
