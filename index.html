@@ -256,26 +256,30 @@
             type="text"
             name="full-name"
             id="full-name"
+            class="input-cls inter text-400"
             placeholder="Full name"
-          /><br />
+            maxlength="30"
+            required
+          />
           <input
             type="email"
             name="email"
             id="email"
+            class="input-cls inter text-400"
             placeholder="name@gmail.com"
-          /><br />
+            required
+          />
           <textarea
-            class="text"
+            class="input-cls message-box inter text-400"
             name="message"
             id="message"
             cols="45"
             rows="8"
+            maxlength="500"
             placeholder="Enter text here"
+            required
           ></textarea>
-          <br />
-          <button type="submit" class="btn btn-primary roboto white">
-            Submit
-          </button>
+          <input type="submit" class="btn btn-primary roboto white submit-btn" value="Submit" />
         </form>
       </section>
     </main>
