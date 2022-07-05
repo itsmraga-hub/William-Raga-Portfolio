@@ -367,17 +367,25 @@
     margin-bottom: 75px;
   }
 
-  .flex-container-column,
-  .footer .flex-container-column {
+  .contact-form .flex-container-column,
+  .flex .flex-container-column,
+  .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  .flex-container-column {
+  .contact-form .flex-container-column {
     margin-top: 40px;
-    align-items: center;
     gap: 24px;
+  }
+
+
+  .footer {
+    border-top: 1px solid #3a3837;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 30px;
   }
 
   .contact-form div h2 {
@@ -412,20 +420,19 @@
   footer a {
     color: #ebebff;
     text-decoration: none;
-    line-height: 28px;
     font-size: 20px;
   }
 
-  footer a:hover {
+  footer .text-hover:hover {
     text-decoration: 2px underline var(--primary-heading-color);
   }
 
-  .black-border {
-    background-color: black;
-    width: 150px;
-    height: 1px;
-    /* color: black; */
-    margin: 25px auto;
-
+  .social-icons {
+    display: flex;
   }
+
+  footer {
+    
+  }
+
 }
