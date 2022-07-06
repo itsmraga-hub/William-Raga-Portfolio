@@ -58,10 +58,10 @@
   margin: 30px 0;
 }
 
-html, body {
+html,
+body {
   background-color: var(--primary-color);
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 .white-background-one {
@@ -71,7 +71,6 @@ html, body {
   background-size: 100px;
   margin-left: -30px;
 }
-
 
 .one {
   margin-left: 30px;
