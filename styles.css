@@ -265,8 +265,7 @@ nav > ul > li {
   gap: 10px;
   background-image: url(background/ellipse-c.png), url(background/ellipse-d.png), url(background/ellipse-e.png), url(background/ellipse-f.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: left top 7%, right top 36%,
-  left top 63%, right bottom 8%;
+  background-position: left top 7%, right top 36%, left top 63%, right bottom 8%;
   background-size: 250px;
   width: 100%;
 }
@@ -475,6 +474,10 @@ footer .text-hover:hover {
     background-image: url(background/ellipse-c.png), url(background/ellipse-d.png), url(background/desktop-e.png), url(background/ellipse-f.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left top 7%, right top 36%, left top 63%, right bottom 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 20px;
   }
 
   .white-background-one {
@@ -541,13 +544,6 @@ footer .text-hover:hover {
     margin: 0 auto;
   }
 
-  .grid-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    padding-top: 20px;
-  }
-
   .grid-row-item .project-image {
     width: 500px;
   }
@@ -572,6 +568,10 @@ footer .text-hover:hover {
   }
 
   #change-order .grid-row-item {
+    order: 2;
+  }
+
+  #change-order-1 .grid-row-item {
     order: 2;
   }
 
