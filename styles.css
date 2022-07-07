@@ -148,7 +148,7 @@ main {
 }
 
 .my-title {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .my-title h1 {
@@ -360,6 +360,7 @@ button::selection {
 .contact-form {
   margin-top: 75px;
   margin-bottom: 75px;
+  padding: 0 10px;
 }
 
 .contact-form .flex-container-column,
