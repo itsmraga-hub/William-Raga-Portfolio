@@ -13,7 +13,13 @@ My first Portfolio project built with HTML, CSS and JavaScript.
 
 ## Getting Started
 
+- ### Mobile Version
+
 ![screenshort](portfolio2.png)
+
+- ### Desktop Version
+
+![screenshot](desktopImage.png)
 
 ### Prerequisites
 
