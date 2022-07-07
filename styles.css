@@ -209,7 +209,7 @@ nav > ul > li {
 }
 
 .lists li {
-  padding: 10px 20px 0 0;
+  padding: 10px 15px 0 0;
 }
 
 .qualifications h4:hover {
@@ -300,6 +300,7 @@ nav > ul > li {
 .grid-row-item img {
   width: 100%;
   margin: 0 auto;
+  border-radius: 4px;
 }
 
 .grid-row-item {
@@ -432,6 +433,65 @@ footer .text-hover:hover {
 .contact-form .desktop {
   display: none;
 }
+
+/* Animations and transitions */
+
+  .logo:hover {
+    transform: rotate(360deg);
+    transition-duration: 250ms;
+  }
+
+  .qualifications h4:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+  .qualifications li:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .my-title h1 {
+    animation: left-to-right 5000ms ease-in forwards infinite;
+    transition-duration: 50ms;
+  }
+
+  @keyframes left-to-right {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(100%);
+    }
+
+    50% {
+      transform: translateX(0);
+    }
+
+    75% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Project Image animations */
+
+  .grid-row-item img:hover {
+    transform: scale(1.075, 1.075);
+    transition-duration: 500ms;
+  }
+
+  /* Button animations */
+
+  form .btn:hover {
+    transform: scale(1.1);
+    background-color: #5e42d7;
+    transition-timing-function: linear;
+    transition-duration:  500ms;
+  }
+
 
 /* Desktop version width: 768px */
 
