@@ -161,6 +161,7 @@ main {
   font-style: bold;
   letter-spacing: 0.37px;
   line-height: 72px;
+  transition: ease-out 0.25s;
 }
 
 .my-title p {
@@ -226,10 +227,12 @@ nav > ul > li {
 
 .qualifications h4:hover {
   text-decoration: 2px underline var(--secondary-heading-color);
+  transform: scale(1.2, 1.2);
 }
 
 .qualifications li:hover {
   text-decoration: 2px underline var(--secondary-heading-color);
+  transform: scale(1.1, 1.1);
 }
 
 .socials {
@@ -247,7 +250,7 @@ nav > ul > li {
   transform: scale(1.25);
   transition: ease-out 0.25s;
 }
- 
+
 .nav-arrow {
   display: flex;
   justify-content: center;
@@ -425,17 +428,13 @@ button::selection {
   padding: 16px;
   color: #191765;
   font-size: 15px;
-}
-
-.input-cls {
   transition: ease-out 0.25s;
 }
 
-.input-cls:active{
-  transform: translate(1rem, 0); 
-  transition: ease-out 0.25s; 
+.input-cls:active {
+  transform: translate(1rem, 0);
+  transition: ease-out 0.25s;
 }
-
 
 .message-box {
   height: auto;
@@ -467,87 +466,56 @@ footer .text-hover:hover {
 
 /* Animations and transitions */
 
-  .logo:hover {
-    transform: scale(1.25);
-    text-shadow: 2px 2px crimson;
-    transition: ease-in 250ms;
+.logo:hover {
+  transform: scale(1.25);
+  text-shadow: 2px 2px crimson;
+  transition: ease-in 250ms;
+}
+
+.my-title h1:hover {
+  animation: left-to-right 2s ease-in infinite;
+  transition-duration: 0.25s;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: rotate(45deg) scale(1);
   }
 
-  .qualifications h4:hover {
-    transform: scale(1.2, 1.2);
+  25% {
+    transform: rotate(90deg) scale(0.75);
   }
 
-  .qualifications li:hover {
-    transform: scale(1.1, 1.1);
+  50% {
+    transform: rotate(135deg) scale(0.5);
   }
 
-  .my-title h1 {
-    transition: ease-out 0.25s;
-  }
-  
-  .my-title h1:hover {
-    animation: left-to-right 2s ease-in infinite;
-    transition-duration: 0.25s;
+  75% {
+    transform: rotate(135deg) scale(0.75);
   }
 
-  @keyframes left-to-right {
-    0% {
-      transform: rotate(45deg) scale(1);
-    }
-    25% {
-      transform: rotate(90deg) scale(0.75);
-    }
-    50% {
-      transform: rotate(135deg) scale(0.5);
-    }
-    75% {
-      transform: rotate(135deg) scale(0.75);
-    }
-    100% {
-      transform: rotate(180deg) scale(1);
-    }
-    
-    
-    /* 0% {
-      transform: translateX(0);
-    }
-
-    25% {
-      transform: translateX(100%);
-    }
-
-    50% {
-      transform: translateX(0);
-    }
-
-    75% {
-      transform: translateX(-100%);
-    }
-
-    100% {
-      transform: translateX(0);
-    } */
+  100% {
+    transform: rotate(180deg) scale(1);
   }
+}
 
-  /* Project Image animations */
+/* Project Image animations */
 
-  .grid-row-item img:hover {
-    transform: scale(1.075, 1.075);
-    transition-duration: 500ms;
-  }
+.grid-row-item img:hover {
+  transform: scale(1.075, 1.075);
+  transition-duration: 500ms;
+}
 
-  /* Button animations */
+/* Button animations */
 
-  form .btn:hover {
-    transform: scale(1.1);
-    background-color: #5e42d7;
-    transition-timing-function: linear;
-    transition-duration:  500ms;
-  }
-
+form .btn:hover {
+  transform: scale(1.1);
+  background-color: #5e42d7;
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+}
 
 /* Desktop version width: 768px */
-
 @media (min-width: 768px) {
   * {
     margin: 0;
