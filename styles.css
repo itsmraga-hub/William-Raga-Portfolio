@@ -28,6 +28,10 @@
   color: var(--white-color);
 }
 
+.logo {
+  transition: ease-out 250ms;
+}
+
 .roboto {
   font-family: "Roboto", sans-serif;
 }
@@ -157,6 +161,7 @@ main {
   font-style: bold;
   letter-spacing: 0.37px;
   line-height: 72px;
+  transition: ease-out 0.25s;
 }
 
 .my-title p {
@@ -209,15 +214,25 @@ nav > ul > li {
 }
 
 .lists li {
-  padding: 10px 20px 0 0;
+  padding: 10px 15px;
+  transition: ease-out 0.25s;
+}
+
+.lists li:hover {
+  cursor: pointer;
+  color: #f1b6fe;
+  transition: ease-in 0.25s;
+  border-bottom: 1px dashed #f1b6fe;
 }
 
 .qualifications h4:hover {
   text-decoration: 2px underline var(--secondary-heading-color);
+  transform: scale(1.2, 1.2);
 }
 
 .qualifications li:hover {
   text-decoration: 2px underline var(--secondary-heading-color);
+  transform: scale(1.1, 1.1);
 }
 
 .socials {
@@ -225,6 +240,15 @@ nav > ul > li {
   justify-content: center;
   gap: 0;
   padding-bottom: 30px;
+}
+
+.socials-img {
+  transition: ease-out 0.25s;
+}
+
+.socials-img:hover {
+  transform: scale(1.25);
+  transition: ease-out 0.25s;
 }
 
 .nav-arrow {
@@ -300,6 +324,7 @@ nav > ul > li {
 .grid-row-item img {
   width: 100%;
   margin: 0 auto;
+  border-radius: 4px;
 }
 
 .grid-row-item {
@@ -403,6 +428,12 @@ button::selection {
   padding: 16px;
   color: #191765;
   font-size: 15px;
+  transition: ease-out 0.25s;
+}
+
+.input-cls:active {
+  transform: translate(1rem, 0);
+  transition: ease-out 0.25s;
 }
 
 .message-box {
@@ -433,8 +464,58 @@ footer .text-hover:hover {
   display: none;
 }
 
-/* Desktop version width: 768px */
+/* Animations and transitions */
 
+.logo:hover {
+  transform: scale(1.25);
+  text-shadow: 2px 2px crimson;
+  transition: ease-in 250ms;
+}
+
+.my-title h1:hover {
+  animation: left-to-right 2s ease-in infinite;
+  transition-duration: 0.25s;
+}
+
+@keyframes left-to-right {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+
+  25% {
+    transform: rotate(90deg) scale(0.75);
+  }
+
+  50% {
+    transform: rotate(135deg) scale(0.5);
+  }
+
+  75% {
+    transform: rotate(135deg) scale(0.75);
+  }
+
+  100% {
+    transform: rotate(180deg) scale(1);
+  }
+}
+
+/* Project Image animations */
+
+.grid-row-item img:hover {
+  transform: scale(1.075, 1.075);
+  transition-duration: 500ms;
+}
+
+/* Button animations */
+
+form .btn:hover {
+  transform: scale(1.1);
+  background-color: #5e42d7;
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+}
+
+/* Desktop version width: 768px */
 @media (min-width: 768px) {
   * {
     margin: 0;
