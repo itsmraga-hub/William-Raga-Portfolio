@@ -39,7 +39,7 @@ My first Portfolio project built with HTML, CSS and JavaScript.
 
 - [Linter](https://github.com/microverseinc/linters-config/tree/master/html-css)
 
-- [View Live Page](https://)
+- [View Live Page](https://github.com)
 
 ## Authors
 
