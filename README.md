@@ -39,15 +39,21 @@ My first Portfolio project built with HTML, CSS and JavaScript.
 
 - [Linter](https://github.com/microverseinc/linters-config/tree/master/html-css)
 
+- [View Live Page](https://)
+
 ## Authors
 
 👤 **Author1**
 
-- Github: [@itsmraga-hub](https://github.com/itsmraga-hub)
+- GitHub: [@itsmraga-hub](https://github.com/itsmraga-hub)
 
 - Twitter: [@RagaMacharia](https://twitter.com/RagaMacharia)
 
 - Linkedin: [@itsmraga](https://www.linkedin.com/in/itsmraga/)
+
+👤 **Contributor1**
+
+- GitHub: [@skyv](https://github.com/skyv26)
 
 ## 🤝 Contributing
 
