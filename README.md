@@ -39,7 +39,7 @@ My first Portfolio project built with HTML, CSS and JavaScript.
 
 - [Linter](https://github.com/microverseinc/linters-config/tree/master/html-css)
 
-- [View Live Page](https://github.com)
+- [View Live Page Here](https://itsmraga-hub.github.io/William-Raga-Portfolio/)
 
 ## Authors
 
@@ -54,6 +54,8 @@ My first Portfolio project built with HTML, CSS and JavaScript.
 👤 **Contributor1**
 
 - GitHub: [@skyv](https://github.com/skyv26)
+
+- Linekdin: [Aakash Verma](https://www.linkedin.com/in/devaakash/)
 
 ## 🤝 Contributing
 
