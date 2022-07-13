@@ -473,30 +473,8 @@ footer .text-hover:hover {
 }
 
 .my-title h1:hover {
-  animation: left-to-right 2s ease-in infinite;
+  text-shadow: 4px 4px #2a2b33;
   transition-duration: 0.25s;
-}
-
-@keyframes left-to-right {
-  0% {
-    transform: rotate(45deg) scale(1);
-  }
-
-  25% {
-    transform: rotate(90deg) scale(0.75);
-  }
-
-  50% {
-    transform: rotate(135deg) scale(0.5);
-  }
-
-  75% {
-    transform: rotate(135deg) scale(0.75);
-  }
-
-  100% {
-    transform: rotate(180deg) scale(1);
-  }
 }
 
 /* Project Image animations */
