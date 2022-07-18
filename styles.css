@@ -7,6 +7,7 @@
   --text-color: #c8c8d4;
   --white-color: #fff;
   --secondary-heading-color: #9490ff;
+  --third-heading-color: #AA90ff;
 }
 
 * {
@@ -113,13 +114,6 @@ body {
   text-decoration: none;
 }
 
-.header-container .jav-link-class {
-  /* background-image: url(assets/right-chevron-svgrepo-com.svg);
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: right top 20%; */
-}
-
 .header-container__nav-list-item {
   display: flex;
 }
@@ -203,7 +197,7 @@ body {
   transition: transform 500ms ease-out;
 }
 
-/* @keyframes fadein {
+@keyframes fadein {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -213,7 +207,7 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-} */
+}
 
 .primary-navigation[data-visible="true"] {
   transform: translateX(0%);
