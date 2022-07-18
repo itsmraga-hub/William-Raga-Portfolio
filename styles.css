@@ -144,6 +144,10 @@ body {
   text-decoration: 2px none var(--primary-heading-color);
 }
 
+.primary-navigation li a i {
+  display: none;
+}
+
 .header-container__nav i:hover {
   cursor: pointer;
   color: #acb7c3;
@@ -184,14 +188,10 @@ body {
   mix-blend-mode: normal;
   background-image: url(assets/shape\ mobile\ menu-2.svg), url(assets/shape\ mobile\ menu-1.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: left top 25%, right bottom ;
+  background-position: left top 25%, right bottom;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   transform: translateX(100%);
   transition: transform 500ms ease-out;
-}
-
-.primary-navigation li a i {
-  display: none;
 }
 
 /* @keyframes fadein {
@@ -593,7 +593,7 @@ form .btn:hover {
   html {
     width: 100%;
   }
-  
+
   body {
     width: 100%;
     overflow-x: hidden;
@@ -615,6 +615,10 @@ form .btn:hover {
 
   .lists li {
     padding: 0;
+  }
+
+  .qualifications li {
+    width: 30%;
   }
 
   .lists li:hover {
@@ -681,10 +685,6 @@ form .btn:hover {
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
-  }
-
-  .qualifications li {
-    width: 30%;
   }
 
   .navigation-space {
