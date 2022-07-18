@@ -194,7 +194,7 @@ body {
   display: none;
 }
 
-@keyframes fadein {
+/* @keyframes fadein {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -204,7 +204,7 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 
 .primary-navigation[data-visible="true"] {
   transform: translateX(0%);
