@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const primaryNav = document.querySelector('.primary-navigation');
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const navLinks = document.querySelectorAll('.nav-links li');
