@@ -1,10 +1,7 @@
-/* eslint-disable linebreak-style */
-// eslint-disable-next-line linebreak-style
 const primaryNav = document.querySelector('.primary-navigation');
 const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
 const navLinks = document.querySelectorAll('.nav-links li');
 const navLinksATag = document.querySelectorAll('.jav-link-class');
-
 const navArray = Array.from(navLinksATag);
 
 function checkLink() {
@@ -21,14 +18,13 @@ navArray.forEach((link) => {
 });
 
 mobileNavToggle.addEventListener('click', () => {
-  // Close link
 
   const visible = primaryNav.getAttribute('data-visible');
 
   if (visible === 'false') {
     primaryNav.setAttribute('data-visible', true);
     mobileNavToggle.setAttribute('aria-expanded', true);
-    // changeLink();
+
   } else if (visible === 'true') {
     primaryNav.setAttribute('data-visible', false);
     mobileNavToggle.setAttribute('aria-expanded', false);
