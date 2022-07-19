@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.nav-links li');
 const navLinksATag = document.querySelectorAll('.jav-link-class');
 const navArray = Array.from(navLinksATag);
 
+// Function to check the respective links to disappear nav-link if clicked
 function checkLink() {
   const visibility = primaryNav.getAttribute('data-visible');
 
@@ -13,10 +14,12 @@ function checkLink() {
   }
 }
 
+// Looping through the array, to call the checkLink function on each
 navArray.forEach((link) => {
   link.addEventListener('click', checkLink);
 });
 
+// Burger eventListener to toggle the navLink view
 mobileNavToggle.addEventListener('click', () => {
   const visible = primaryNav.getAttribute('data-visible');
 
