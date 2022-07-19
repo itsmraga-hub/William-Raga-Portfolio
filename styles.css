@@ -481,32 +481,45 @@ button::selection {
 .pop-up-window {
   border: 1px solid #fff;
   padding: 0 24px 24px 24px;
+  margin: 20px 0;
   width: 92%;
   background-color: rgba(255, 255, 255, 0.1);
-  position: fixed;
+
+  /* position: fixed;
   top: 4%;
   left: 10%;
   transform: translate(-6%, 0);
-  visibility: hidden;
+  visibility: hidden; */
+  display: none;
   opacity: 0;
   transition: ease-out 500ms;
 }
 
 .pop-up-window.pop-active {
-  visibility: visible;
+  /* visibility: visible; */
+  display: block;
   opacity: 1;
   transition: ease-in 500ms;
+  overflow: hidden;
 }
 
+/* .grid-item#blur-background.pop-active {
+  display: block;
+} */
+
 .grid-item#blur-background.pop-active {
+  display: none;
   filter: blur(100px);
-  /* To prevent user from clicking anywhere */
+
+  /* To prevent user from clicking anywhere  */
+
   pointer-events: none;
   user-select: none;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .scroll {
+  height: 100%;
   overflow: hidden;
 }
 
@@ -554,7 +567,11 @@ button::selection {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1px;
-  background-color: #7d73fc
+  background-color: #7d73fc;
+}
+
+.pop-up-window .pop-up-btns .github svg path {
+  fill: #fff;
 }
 
 /* Contact form styling starts here */
@@ -705,7 +722,7 @@ form .btn:hover {
   }
 
   .lists li {
-    padding: 0;
+    padding: 10px;
   }
 
   .qualifications li {
@@ -754,6 +771,41 @@ form .btn:hover {
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: 0% 0%;
+  }
+
+  .pop-up-window {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .pop-up-window .head .pop-up-title {
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .pop-up-window .pop-up-text {
+    width: 50%;
+    margin: 60px auto 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .pop-up-window .pop-up-list {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .pop-up-window .pop-up-btns {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px 0;
+  }
+
+  .pop-up-window .pop-up-btns .pop-up-btn {
+    font-size: 14px;
   }
 
   .one {

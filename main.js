@@ -4,26 +4,6 @@ const navLinks = document.querySelectorAll('.nav-links li');
 const navLinksATag = document.querySelectorAll('.jav-link-class');
 const navArray = Array.from(navLinksATag);
 
-// Select the project-card to blur it
-const btn = document.getElementById('btn-1');
-const closeBtn = document.getElementById('close');
-// const bodyTag = document.getElementById('body');
-const toggle = () => {
-  const blurBackground1 = document.getElementById('blur-background');
-  const popup1 = document.getElementById('pop-up-window');
-  blurBackground1.classList.toggle('pop-active');
-  popup1.classList.toggle('pop-active');
-  if (popup1.classList.contains('pop-active')) {
-    document.documentElement = 'scroll';
-  } else {
-    document.body.style.overflowY = 'hidden';
-  }
-  // bodyTag.classList.toggle('scroll');
-};
-
-btn.addEventListener('click', toggle);
-closeBtn.addEventListener('click', toggle);
-
 // Function to check the respective links to disappear nav-link if clicked
 function checkLink() {
   const visibility = primaryNav.getAttribute('data-visible');
@@ -59,3 +39,72 @@ mobileNavToggle.addEventListener('click', () => {
     }
   });
 });
+
+const ProjectObject = [
+  {
+    projectName: '',
+    projectDescription: '',
+    projectImg: '',
+    projectTechnologies: '',
+    projectLive: '',
+    projectSource: '',
+  },
+];
+
+ProjectObject[0].projectName = 'Name';
+// Select the project-card to blur it
+// const btns = document.querySelectorAll('[data-id="btn-1"]');
+// const btnsArray = Array.from(btns);
+// const closeBtns = document.querySelectorAll('[data-id="close"]');
+// const closeBtnArray = Array.from(closeBtns);
+
+// const blurBackground1 = document.querySelectorAll('[data-id="blur"]');
+// const popup1 = document.querySelectorAll('[data-id="pop-up"]');
+// const blurArray = Array.from(blurBackground1);
+// const popArray = Array.from(popup1);
+
+// const toggle = () => {
+// blurArray.forEach((blurBackground) => {
+//   blurBackground.classList.toggle('pop-active');
+// });
+// popArray.forEach((pop) => {
+//   pop.classList.toggle('pop-active');
+//   if (pop.classList.contains('pop-active')) {
+//     document.body.classList.add('scroll');
+//   } else {
+//     document.body.classList.remove('scroll');
+//   }
+// });
+// for (let i = 0; i < blurArray.length; i += 1) {
+//   if(blurArray[i].classList.contains('pop-active'))
+// }
+// blurBackground1.classList.toggle('pop-active');
+// popup1.classList.toggle('pop-active');
+// blurBackground1.classList.toggle('pop-active');
+// popup1.classList.toggle('pop-active');
+// };
+
+// btnsArray.forEach((btn) => {
+//   btn.addEventListener('click', toggle);
+// });
+
+// btnsArray.forEach((button, i) => {
+//   button.addEventListener('click', (e) => {
+//     if (e.target.id == 1) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     } if (e.target.id == 2) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     } if (e.target.id == 3) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     } if (e.target.id == 4) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     }
+//   });
+// });
+// closeBtnArray.forEach((closeBtn) => {
+//   closeBtn.addEventListener('click', toggle);
+// });
