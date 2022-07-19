@@ -59,7 +59,3 @@ mobileNavToggle.addEventListener('click', () => {
     }
   });
 });
-  // Attach the mutation observer to overlay, and only when attribute values change
-  observer.observe(overlay, { attributes : true, attributeFilter : ['style']});
-
-  });
