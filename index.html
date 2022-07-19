@@ -12,18 +12,103 @@
     <title>William Raga's Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="header-container">
       <a href="" class="white text-normal align-center roboto logo"
         >William Raga</a
       >
-      <nav class="flex-container-d">
-        <i class="fa-solid fa-bars fa-2x white hamburger-menu"></i>
-        <ul class="flex-container-d lists">
-          <li class="roboto white"><a href="" class="white">Portfolio</a></li>
-          <li class="roboto white"><a href="" class="white">About</a></li>
-          <li class="roboto white"><a href="" class="white">Contact</a></li>
-          <li class="roboto white">
-            <a href="" class="white"
+      <div
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        class="header-container__nav-list-item-burger burger mobile-nav-toggle"
+        role="navigation"
+      >
+        <div class="burger-menu rotate"></div>
+        <div class="burger-menu dissappear"></div>
+        <div class="burger-menu rotate1"></div>
+      </div>
+      <nav class="flex-container-d header-container__nav">
+        <ul
+          class="flex-container-d lists header-container__nav-list primary-navigation nav-links"
+          data-visible="false"
+          id="primary-navigation"
+        >
+          <li class="roboto white header-container__nav-list-item">
+            <a href="#work" class="white jav-link-class port">Portfolio</a
+            ><svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="61.388px"
+              height="51.388px"
+              viewBox="0 0 51.388 51.388"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M9.169,51.388c-0.351,0-0.701-0.157-0.93-0.463c-0.388-0.514-0.288-1.243,0.227-1.634l31.066-23.598L8.461,2.098
+               C7.95,1.708,7.85,0.977,8.237,0.463c0.395-0.517,1.126-0.615,1.64-0.225l33.51,25.456L9.877,51.151
+               C9.664,51.31,9.415,51.388,9.169,51.388z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="roboto white header-container__nav-list-item">
+            <a href="#about" class="white jav-link-class about">About</a>
+            <svg
+              version="1.1"
+              id="Capa_2"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="51.388px"
+              height="51.388px"
+              viewBox="0 0 51.388 51.388"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M9.169,51.388c-0.351,0-0.701-0.157-0.93-0.463c-0.388-0.514-0.288-1.243,0.227-1.634l31.066-23.598L8.461,2.098
+			C7.95,1.708,7.85,0.977,8.237,0.463c0.395-0.517,1.126-0.615,1.64-0.225l33.51,25.456L9.877,51.151
+			C9.664,51.31,9.415,51.388,9.169,51.388z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="roboto white header-container__nav-list-item">
+            <a href="#contact" class="white jav-link-class contact">Contact</a>
+            <svg
+              version="1.1"
+              id="Capa_3"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="51.388px"
+              height="51.388px"
+              viewBox="0 0 51.388 51.388"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M9.169,51.388c-0.351,0-0.701-0.157-0.93-0.463c-0.388-0.514-0.288-1.243,0.227-1.634l31.066-23.598L8.461,2.098
+			C7.95,1.708,7.85,0.977,8.237,0.463c0.395-0.517,1.126-0.615,1.64-0.225l33.51,25.456L9.877,51.151
+			C9.664,51.31,9.415,51.388,9.169,51.388z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="roboto white header-container__nav-list-item">
+            <a href="#message" class="white"
               ><i class="fa fa-envelope-o white" aria-hidden="true"></i
             ></a>
           </li>
@@ -31,7 +116,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-section">
       <section class="jumbotron">
         <div class="white-background-one">
           <div class="one">
@@ -41,7 +126,7 @@
                 Software Developer
               </p>
             </div>
-            <div>
+            <div id="about">
               <p class="text-400 align-center description roboto">
                 I can help you build a product , feature or website Look through
                 some of my work and experience! If you like what you see and
@@ -141,9 +226,9 @@
           </div>
         </div>
       </section>
-      <section class="grid-container">
+      <section class="grid-container" id="work">
         <div class="grid-item" id="pr-work-title">
-          <h3 class="head-color roboto pr-title" id="work">My recent work</h3>
+          <h3 class="head-color roboto pr-title">My recent work</h3>
         </div>
         <div class="first-white-background">
           <div class="grid-item first">
@@ -331,7 +416,7 @@
           <textarea
             class="input-cls message-box inter text-400"
             name="message"
-            id="message"
+            id="messagetext"
             cols="45"
             rows="8"
             maxlength="500"
@@ -347,7 +432,7 @@
       </section>
     </main>
 
-    <footer class="footer flex-container-column">
+    <footer class="footer flex-container-column" id="message">
       <div class="social-icons">
         <a href="https://github.com/itsmraga-hub"
           ><img
@@ -379,5 +464,8 @@
         >
       </div>
     </footer>
+
+    <!-- THE SCRIPTS USED -->
+    <script src="main.js"></script>
   </body>
 </html>
