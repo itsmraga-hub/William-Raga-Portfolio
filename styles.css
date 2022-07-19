@@ -432,6 +432,7 @@ li {
 .lists {
   margin: 0;
   list-style-type: none;
+  padding: 10px 0;
   display: flex;
   justify-content: flex-start;
   font-size: 20px;
@@ -474,6 +475,89 @@ li {
 button::selection {
   background-color: #5e42d7;
 }
+
+/* Pop-up window styling starts here */
+
+.pop-up-window {
+  border: 1px solid #fff;
+  padding: 0 24px 24px 24px;
+  width: 92%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: fixed;
+  top: 4%;
+  left: 10%;
+  transform: translate(-6%, 0);
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-out 500ms;
+}
+
+.pop-up-window.pop-active {
+  visibility: visible;
+  opacity: 1;
+  transition: ease-in 500ms;
+}
+
+.grid-item#blur-background.pop-active {
+  filter: blur(100px);
+  /* To prevent user from clicking anywhere */
+  pointer-events: none;
+  user-select: none;
+  opacity: .3;
+}
+
+.scroll {
+  overflow: hidden;
+}
+
+.pop-up-window .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pop-up-window .head .pop-up-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.pop-up-window .pop-up-img {
+  width: 100%;
+}
+
+.pop-up-window .pop-up-text {
+  text-align: center;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
+.pop-up-window .pop-up-list .pop-up-textlist {
+  padding: 10px 10px 20px 10px;
+  margin: 0;
+}
+
+.pop-up-window .pop-up-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.pop-up-window .pop-up-btns .pop-up-btn {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #7d73fc
+}
+
+/* Contact form styling starts here */
 
 .contact-form {
   margin-top: 75px;
