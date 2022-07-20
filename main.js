@@ -116,8 +116,6 @@ function createModal(i) {
 const btns = document.querySelectorAll('[data-id="btn-1"]');
 const btnsArray = Array.from(btns);
 
-// Useless text to edit
-// Remove this comments
 btnsArray.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     createModal(i);
