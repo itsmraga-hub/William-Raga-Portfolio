@@ -410,10 +410,11 @@
           action="https://formspree.io/f/mrgjweev"
           method="post"
           class="flex flex-container-column"
+          id="contact-form"
         >
           <input
             type="text"
-            name="full-name"
+            name="fullname"
             id="full-name"
             class="input-cls inter text-400"
             placeholder="Full name"
@@ -438,6 +439,7 @@
             placeholder="Enter text here"
             required
           ></textarea>
+          <small id="err-display"></small>
           <input
             type="submit"
             class="btn btn-primary roboto white submit-btn"
