@@ -644,6 +644,15 @@ footer .text-hover:hover {
   display: none;
 }
 
+#err-display {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+  border: 1px solid rgba(255, 0, 0, 0.9);
+}
+
 /* Animations and transitions */
 
 .logo:hover {
