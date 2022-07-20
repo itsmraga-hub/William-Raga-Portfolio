@@ -480,80 +480,20 @@ button::selection {
 
 .pop-up-window {
   border: 1px solid #fff;
-  padding: 0 24px 24px 24px;
-  margin: 20px 0;
-  width: 92%;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  /* position: fixed;
-  top: 4%;
-  left: 10%;
-  transform: translate(-6%, 0);
-  visibility: hidden; */
-  display: none;
-  opacity: 0;
-  transition: ease-out 500ms;
-}
-
-.pop-up-window.pop-active {
-  /* visibility: visible; */
-  display: block;
-  opacity: 1;
-  transition: ease-in 500ms;
-  overflow: hidden;
-}
-
-/* .grid-item#blur-background.pop-active {
-  display: block;
-} */
-
-.grid-item#blur-background0.pop-active {
-  display: none;
-  filter: blur(100px);
-
-  /* To prevent user from clicking anywhere  */
-
-  pointer-events: none;
-  user-select: none;
-  opacity: 0.3;
-}
-
-.grid-item#blur-background1.pop-active {
-  display: none;
-  filter: blur(100px);
-
-  /* To prevent user from clicking anywhere  */
-
-  pointer-events: none;
-  user-select: none;
-  opacity: 0.3;
-}
-
-.grid-item#blur-background2.pop-active {
-  display: none;
-  filter: blur(100px);
-
-  /* To prevent user from clicking anywhere  */
-
-  pointer-events: none;
-  user-select: none;
-  opacity: 0.3;
-}
-
-.grid-item#blur-background3.pop-active {
-  display: none;
-  filter: blur(100px);
-
-  /* To prevent user from clicking anywhere  */
-
-  pointer-events: none;
-  user-select: none;
-  opacity: 0.3;
-}
-
-.scroll {
+  padding: 0 24px;
+  width: 90%;
+  margin: 0 auto;
   height: 100%;
-  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 100000;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  overflow: auto;
+  display: none;
+  transition: ease-out 500ms;
 }
 
 .pop-up-window .head {
@@ -840,6 +780,15 @@ form .btn:hover {
     width: 50%;
     margin: 0 auto;
     padding: 0 50px;
+    justify-content: center;
+  }
+
+  .pop-up-window .pop-up-list .pop-up-textlist {
+    font-size: 20px;
+  }
+
+  .pop-up-window .pop-up-list .pop-up-textlist:nth-child(2) {
+    font-size: 20px;
   }
 
   .pop-up-window .pop-up-btns {
