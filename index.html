@@ -11,8 +11,8 @@
     ></script>
     <title>William Raga's Portfolio</title>
   </head>
-  <body>
-    <header class="header-container">
+  <body class="body-blur">
+    <header class="header-container modal-background">
       <a href="" class="white text-normal align-center roboto logo"
         >William Raga</a
       >
@@ -116,7 +116,7 @@
       </nav>
     </header>
 
-    <main class="main-section">
+    <main class="main-section modal-background">
       <section class="jumbotron">
         <div class="white-background-one">
           <div class="one">
@@ -135,7 +135,6 @@
             </div>
           </div>
         </div>
-        <!-- <hr class="horizontal" /> -->
         <div class="white-background-two">
           <ul class="qualifications two">
             <li>
@@ -230,8 +229,11 @@
         <div class="grid-item" id="pr-work-title">
           <h3 class="head-color roboto pr-title">My recent work</h3>
         </div>
-        <div class="first-white-background">
-          <div class="grid-item first">
+
+        <!-- Project card 1 -->
+
+        <div class="first-white-background append-text">
+          <div class="grid-item first" id="blur-background0" data-id="blur">
             <div class="grid-row-item">
               <img
                 src="assets/projects/Img-Placeholder.png"
@@ -260,15 +262,19 @@
                 </ul>
               </div>
               <div class="grid-row-item">
-                <button type="button" class="btn btn-primary roboto white">
+                <button type="button" id="1" data-id="btn-1" class="btn btn-primary roboto white">
                   See Project
                 </button>
               </div>
             </div>
           </div>
+          <!-- Pop-up for project 1 -->
         </div>
-        <div class="second-white-background">
-          <div class="grid-item second" id="change-order">
+
+        <!-- Project card 2 -->
+
+        <div class="second-white-background append-text">
+          <div class="grid-item second" id="blur-background1" data-id="blur">
             <div class="grid-row-item">
               <img
                 src="assets/projects/Img-Placeholder.png"
@@ -297,15 +303,18 @@
                 </ul>
               </div>
               <div class="grid-row-item">
-                <button type="button" class="btn btn-primary roboto white">
+                <button type="button" id="2" data-id="btn-1" class="btn btn-primary roboto white">
                   See Project
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="third-white-background">
-          <div class="grid-item third">
+
+        <!-- Project card 3 -->
+
+        <div class="third-white-background append-text">
+          <div class="grid-item third" id="blur-background2" data-id="blur">
             <div class="grid-row-item">
               <img
                 src="assets/projects/Img-Placeholder.png"
@@ -334,15 +343,18 @@
                 </ul>
               </div>
               <div class="grid-row-item">
-                <button type="button" class="btn btn-primary roboto white">
+                <button type="button" id="3" data-id="btn-1" class="btn btn-primary roboto white">
                   See Project
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="fourth-white-background">
-          <div class="grid-item fourth" id="change-order-1">
+
+        <!-- Project card 4 -->
+
+        <div class="fourth-white-background append-text">
+          <div class="grid-item fourth" id="blur-background3" data-id="blur">
             <div class="grid-row-item">
               <img
                 src="assets/projects/Img-Placeholder.png"
@@ -371,7 +383,7 @@
                 </ul>
               </div>
               <div class="grid-row-item">
-                <button type="button" class="btn btn-primary roboto white">
+                <button type="button" data-id="btn-1" id="4" class="btn btn-primary roboto white">
                   See Project
                 </button>
               </div>
@@ -379,6 +391,9 @@
           </div>
         </div>
       </section>
+      <!-- End of Project section -->
+
+      <!-- Contact form section -->
       <section class="contact-form flex-container-column" id="contact">
         <div>
           <h2 class="roboto head-color align-center">
@@ -431,8 +446,10 @@
         </form>
       </section>
     </main>
+    <!-- End of main -->
 
-    <footer class="footer flex-container-column" id="message">
+    <!-- Footer -->
+    <footer class="footer flex-container-column modal-background" id="message">
       <div class="social-icons">
         <a href="https://github.com/itsmraga-hub"
           ><img

@@ -432,6 +432,7 @@ li {
 .lists {
   margin: 0;
   list-style-type: none;
+  padding: 10px 0;
   display: flex;
   justify-content: flex-start;
   font-size: 20px;
@@ -474,6 +475,92 @@ li {
 button::selection {
   background-color: #5e42d7;
 }
+
+/* Pop-up window styling starts here */
+
+.pop-up-window {
+  border: 1px solid #fff;
+  padding: 0 24px 24px;
+  width: 90%;
+  margin: 0 auto;
+  height: 96%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 100000;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  overflow: auto;
+  display: none;
+  transition: ease-out 500ms;
+}
+
+.pop-up-window .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pop-up-window .head a {
+  cursor: pointer;
+}
+
+.pop-up-window .head .pop-up-title {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.pop-up-window .pop-up-img {
+  width: 100%;
+}
+
+.pop-up-window .pop-up-text {
+  text-align: center;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
+
+.pop-up-window .pop-up-list {
+  font-size: 12px;
+}
+
+.pop-up-window .pop-up-list .pop-up-textlist {
+  padding: 10px 10px 20px 10px;
+  margin: 0;
+}
+
+.pop-up-window .pop-up-list .pop-up-textlist:nth-child(2) {
+  font-size: 10px;
+}
+
+.pop-up-window .pop-up-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.pop-up-window .pop-up-btns .pop-up-btn {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #7d73fc;
+}
+
+.pop-up-window .pop-up-btns .github svg path {
+  fill: #fff;
+}
+
+/* Contact form styling starts here */
 
 .contact-form {
   margin-top: 75px;
@@ -621,7 +708,7 @@ form .btn:hover {
   }
 
   .lists li {
-    padding: 0;
+    padding: 10px;
   }
 
   .qualifications li {
@@ -670,6 +757,50 @@ form .btn:hover {
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: 0% 0%;
+  }
+
+  .pop-up-window {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .pop-up-window .head .pop-up-title {
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .pop-up-window .pop-up-text {
+    width: 50%;
+    margin: 60px auto 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .pop-up-window .pop-up-list {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: center;
+  }
+
+  .pop-up-window .pop-up-list .pop-up-textlist {
+    font-size: 20px;
+  }
+
+  .pop-up-window .pop-up-list .pop-up-textlist:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .pop-up-window .pop-up-btns {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px 0;
+  }
+
+  .pop-up-window .pop-up-btns .pop-up-btn {
+    font-size: 14px;
   }
 
   .one {
@@ -747,11 +878,11 @@ form .btn:hover {
     font-size: 19px;
   }
 
-  #change-order .grid-row-item {
+  #blur-background1 .grid-row-item {
     order: 2;
   }
 
-  #change-order-1 .grid-row-item {
+  #blur-background3 .grid-row-item {
     order: 2;
   }
 

@@ -1,0 +1,208 @@
+<div class="pop-up-window" id="pop-up-window" data-id="pop-up">
+            <div class="head">
+              <h4 class="project-title roboto white pop-up-title">Multi-Post stories</h4>
+              <svg data-id="close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
+                </svg>
+            </div>
+            <img src="assets/Snapshoot Portfolio.svg" alt=" an image for my project" class="pop-up-img">
+            <p class="pop-up-text roboto white text-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.</p>
+            <ul class="lists pop-up-list">
+              <li class="inter white li-border pop-up-textlist">css</li>
+              <li class="inter white li-border pop-up-textlist">html</li>
+              <li class="inter white li-border pop-up-textlist">bootstrap</li>
+              <li class="inter white pop-up-textlist">Ruby</li>
+            </ul>
+            <div class="pop-up-btns">
+              <a href="#" class="btn btn-primary pop-up-btn white roboto">See Live<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 5.13401 5.13401 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C13.9706 18 18 13.9706 18 9C18 8.44772 17.5523 8 17 8C16.4477 8 16 8.44772 16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9ZM13 0C12.4477 0 12 0.447715 12 1C12 1.55228 12.4477 2 13 2H14.5858L8.29289 8.29289C7.90237 8.68342 7.90237 9.31658 8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711L16 3.41421V5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5V1C18 0.447715 17.5523 0 17 0H13Z" fill="white"/>
+              </svg></a>
+              <a href="#" class="btn roboto btn-primary pop-up-btn white github">See Source <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z" fill="#505F79"/>
+                </svg></a>
+            </div>
+          </div>
+
+
+
+
+// Select the project-card to blur it
+// const btns = document.querySelectorAll('[data-id="btn-1"]');
+// const btnsArray = Array.from(btns);
+// const closeBtns = document.querySelectorAll('[data-id="close"]');
+// const closeBtnArray = Array.from(closeBtns);
+
+// const blurBackground1 = document.querySelectorAll('[data-id="blur"]');
+// const popup1 = document.querySelectorAll('[data-id="pop-up"]');
+// const blurArray = Array.from(blurBackground1);
+// const popArray = Array.from(popup1);
+
+// const toggle = () => {
+// blurArray.forEach((blurBackground) => {
+//   blurBackground.classList.toggle('pop-active');
+// });
+// popArray.forEach((pop) => {
+//   pop.classList.toggle('pop-active');
+//   if (pop.classList.contains('pop-active')) {
+//     document.body.classList.add('scroll');
+//   } else {
+//     document.body.classList.remove('scroll');
+//   }
+// });
+// for (let i = 0; i < blurArray.length; i += 1) {
+//   if(blurArray[i].classList.contains('pop-active'))
+// }
+// blurBackground1.classList.toggle('pop-active');
+// popup1.classList.toggle('pop-active');
+// blurBackground1.classList.toggle('pop-active');
+// popup1.classList.toggle('pop-active');
+// };
+
+// btnsArray.forEach((btn) => {
+//   btn.addEventListener('click', toggle);
+// });
+
+// btnsArray.forEach((button, i) => {
+//   button.addEventListener('click', (e) => {
+//     if (e.target.id == 1) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     } if (e.target.id == 2) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     } if (e.target.id == 3) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     } if (e.target.id == 4) {
+//       blurArray[i].classList.toggle('pop-active');
+//       return;
+//     }
+//   });
+// });
+// closeBtnArray.forEach((closeBtn) => {
+//   closeBtn.addEventListener('click', toggle);
+// });
+
+
+// btnsArray.forEach((btn) => {
+//   btn.addEventListener('click', toggle);
+// });
+
+// closeBtnArray.forEach((closeBtn) => {
+//   closeBtn.addEventListener('click', toggle);
+// });
+
+// btn.addEventListener('click', toggle);
+// close.addEventListener('click', toggle);
+
+
+// const btn = document.getElementById('1');
+// const close = document.querySelector('.head svg');
+
+// Generating html pop-up window content dynamically
+divsArr.forEach((popup, i) => {
+  const popUpWindow = document.createElement('div');
+  popUpWindow.classList.add('pop-up-window');
+  const iden = `pop-up-window${i}`;
+  popUpWindow.id = iden;
+  popUpWindow.innerHTML = `<div class="head">
+  <h4 class="project-title roboto white pop-up-title">${ProjectObjects[i].projectName}</h4>
+  <a href="">
+  <svg data-id="close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
+    </svg></a>
+</div>
+<img src="${ProjectObjects[i].projectImg}" alt=" an image for my project" class="pop-up-img">
+<p class="pop-up-text roboto white text-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.</p>
+<ul class="lists pop-up-list">
+  <li class="inter white li-border pop-up-textlist">${ProjectObjects[i].projectTechnologies[0]}</li>
+  <li class="inter white li-border pop-up-textlist">${ProjectObjects[i].projectTechnologies[1]}</li>
+  <li class="inter white li-border pop-up-textlist">${ProjectObjects[i].projectTechnologies[2]}</li>
+  <li class="inter white pop-up-textlist">${ProjectObjects[i].projectTechnologies[3]}</li>
+</ul>
+<div class="pop-up-btns">
+  <a href="${ProjectObjects[i].projectLive}" class="btn btn-primary pop-up-btn white roboto">See Live<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 5.13401 5.13401 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C13.9706 18 18 13.9706 18 9C18 8.44772 17.5523 8 17 8C16.4477 8 16 8.44772 16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9ZM13 0C12.4477 0 12 0.447715 12 1C12 1.55228 12.4477 2 13 2H14.5858L8.29289 8.29289C7.90237 8.68342 7.90237 9.31658 8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711L16 3.41421V5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5V1C18 0.447715 17.5523 0 17 0H13Z" fill="white"/>
+  </svg></a>
+  <a href="${ProjectObjects[i].projectSource}" class="btn roboto btn-primary pop-up-btn white github">See Source <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z" fill="#505F79"/>
+    </svg></a>
+</div>`;
+  // popup.appendChild(popUpWindow);
+  body.appendChild(popUpWindow);
+});
+
+
+// Select all buttons
+const btns = document.querySelectorAll('[data-id="btn-1"]');
+const btnsArray = Array.from(btns);
+// Select all close buttons
+const closeBtns = document.querySelectorAll('[data-id="close"]');
+const closeBtnArray = Array.from(closeBtns);
+
+const popUpWindowsId = ['pop-up-window', 'pop-up-window', 'pop-up-window', 'pop-up-window'];
+
+const blurIds = ['blur-background', 'blur-background', 'blur-background', 'blur-background'];
+
+for (let i = 0; i < blurIds.length; i += 1) {
+  blurIds[i] += i;
+}
+
+for (let i = 0; i < popUpWindowsId.length; i += 1) {
+  popUpWindowsId[i] += i;
+}
+
+btnsArray.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    if (Number(e.target.id) === 1) {
+      const blurBackground1 = document.getElementById(blurIds[0]);
+      const popup1 = document.getElementById(popUpWindowsId[0]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    } else if (Number(e.target.id) === 2) {
+      const blurBackground1 = document.getElementById(blurIds[1]);
+      const popup1 = document.getElementById(popUpWindowsId[1]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    } else if (Number(e.target.id) === 3) {
+      const blurBackground1 = document.getElementById(blurIds[2]);
+      const popup1 = document.getElementById(popUpWindowsId[2]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    } else if (Number(e.target.id) === 4) {
+      const blurBackground1 = document.getElementById(blurIds[3]);
+      const popup1 = document.getElementById(popUpWindowsId[3]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    }
+  });
+});
+
+// Event listener for close pop-up window button
+closeBtnArray.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', toggle);
+});
