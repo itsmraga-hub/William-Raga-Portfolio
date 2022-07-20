@@ -587,13 +587,13 @@ button::selection {
   font-size: 12px;
 }
 
-.pop-up-window .pop-up-list .pop-up-textlist:nth-child(2) {
-  font-size: 10px;
-}
-
 .pop-up-window .pop-up-list .pop-up-textlist {
   padding: 10px 10px 20px 10px;
   margin: 0;
+}
+
+.pop-up-window .pop-up-list .pop-up-textlist:nth-child(2) {
+  font-size: 10px;
 }
 
 .pop-up-window .pop-up-btns {
