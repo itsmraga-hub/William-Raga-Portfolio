@@ -507,7 +507,40 @@ button::selection {
   display: block;
 } */
 
-.grid-item#blur-background.pop-active {
+.grid-item#blur-background0.pop-active {
+  display: none;
+  filter: blur(100px);
+
+  /* To prevent user from clicking anywhere  */
+
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+}
+
+.grid-item#blur-background1.pop-active {
+  display: none;
+  filter: blur(100px);
+
+  /* To prevent user from clicking anywhere  */
+
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+}
+
+.grid-item#blur-background2.pop-active {
+  display: none;
+  filter: blur(100px);
+
+  /* To prevent user from clicking anywhere  */
+
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+}
+
+.grid-item#blur-background3.pop-active {
   display: none;
   filter: blur(100px);
 
@@ -531,6 +564,10 @@ button::selection {
   padding: 0;
 }
 
+.pop-up-window .head a {
+  cursor: pointer;
+}
+
 .pop-up-window .head .pop-up-title {
   font-size: 20px;
   line-height: 28px;
@@ -544,6 +581,14 @@ button::selection {
   text-align: center;
   line-height: 24px;
   padding-bottom: 40px;
+}
+
+.pop-up-window .pop-up-list {
+  font-size: 12px;
+}
+
+.pop-up-window .pop-up-list .pop-up-textlist:nth-child(2) {
+  font-size: 10px;
 }
 
 .pop-up-window .pop-up-list .pop-up-textlist {
@@ -792,7 +837,7 @@ form .btn:hover {
   }
 
   .pop-up-window .pop-up-list {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     padding: 0 50px;
   }
@@ -883,11 +928,11 @@ form .btn:hover {
     font-size: 19px;
   }
 
-  #change-order .grid-row-item {
+  #blur-background1 .grid-row-item {
     order: 2;
   }
 
-  #change-order-1 .grid-row-item {
+  #blur-background3 .grid-row-item {
     order: 2;
   }
 

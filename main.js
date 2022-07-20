@@ -50,8 +50,24 @@ const ProjectObjects = [
     projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     projectImg: 'assets/Snapshoot Portfolio.svg',
     projectTechnologies: ['html', 'Ruby on rails', 'css', 'Javascript'],
-    projectLive: 'https://',
-    projectSource: 'https://github.com/',
+    projectLive: 'https://github.com/William-Raga-Portfolio/',
+    projectSource: 'https://github.com/William-Raga-Portfolio/',
+  },
+  {
+    projectName: 'Multi-Post Stories',
+    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    projectImg: 'assets/Snapshoot Portfolio.svg',
+    projectTechnologies: ['html', 'Ruby on rails', 'css', 'Javascript'],
+    projectLive: 'https://github.com/William-Raga-Portfolio/',
+    projectSource: 'https://github.com/William-Raga-Portfolio/',
+  },
+  {
+    projectName: 'Multi-Post Stories',
+    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    projectImg: 'assets/Snapshoot Portfolio.svg',
+    projectTechnologies: ['html', 'Ruby on rails', 'css', 'Javascript'],
+    projectLive: 'https://github.com/William-Raga-Portfolio/',
+    projectSource: 'https://github.com/Portfolio-3/',
   },
   {
     projectName: 'Multi-Post Stories',
@@ -59,26 +75,11 @@ const ProjectObjects = [
     projectImg: 'assets/Snapshoot Portfolio.svg',
     projectTechnologies: ['html', 'Ruby on rails', 'css', 'Javascript'],
     projectLive: 'https://',
-    projectSource: 'https://github.com/',
-  },
-  {
-    projectName: 'Multi-Post Stories',
-    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    projectImg: 'assets/Snapshoot Portfolio.svg',
-    projectTechnologies: ['html', 'Ruby on rails', 'css', 'Javascript'],
-    projectLive: 'https://',
-    projectSource: 'https://github.com/',
-  },
-  {
-    projectName: 'Multi-Post Stories',
-    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    projectImg: 'assets/Snapshoot Portfolio.svg',
-    projectTechnologies: ['html', 'Ruby on rails', 'css', 'Javascript'],
-    projectLive: 'https://',
-    projectSource: 'https://github.com/',
+    projectSource: 'https://github.com/William-Raga-Portfolio/',
   },
 ];
 
+// Generating html pop-up window content dyna,ically
 divsArr.forEach((popup, i) => {
   const popUpWindow = document.createElement('div');
   popUpWindow.classList.add('pop-up-window');
@@ -86,9 +87,10 @@ divsArr.forEach((popup, i) => {
   popUpWindow.id = iden;
   popUpWindow.innerHTML = `<div class="head">
   <h4 class="project-title roboto white pop-up-title">${ProjectObjects[i].projectName}</h4>
+  <a href="">
   <svg data-id="close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="white"/>
-    </svg>
+    </svg></a>
 </div>
 <img src="${ProjectObjects[i].projectImg}" alt=" an image for my project" class="pop-up-img">
 <p class="pop-up-text roboto white text-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.</p>
@@ -109,12 +111,8 @@ divsArr.forEach((popup, i) => {
   popup.appendChild(popUpWindow);
 });
 
-const btn = document.getElementById('1');
-const close = document.querySelector('.head svg');
-
 const toggle = () => {
   const blurBackground1 = document.getElementById('blur-background');
-  // console.log(blurBackground1);
   const popup1 = document.getElementById('pop-up-window0');
 
   blurBackground1.classList.toggle('pop-active');
@@ -127,26 +125,76 @@ const toggle = () => {
   }
 };
 
-btn.addEventListener('click', toggle);
-close.addEventListener('click', toggle);
-
 // Select all buttons
-// const btns = document.querySelectorAll('[data-id="btn-1"]');
-// const btnsArray = Array.from(btns);
+const btns = document.querySelectorAll('[data-id="btn-1"]');
+const btnsArray = Array.from(btns);
 // Select all close buttons
-// const closeBtns = document.querySelectorAll('[data-id="close"]');
-// const closeBtnArray = Array.from(closeBtns);
+const closeBtns = document.querySelectorAll('[data-id="close"]');
+const closeBtnArray = Array.from(closeBtns);
 
-// const popUpWindowsId = ['pop-up-window', 'pop-up-window', 'pop-up-window', 'pop-up-window'];
+const popUpWindowsId = ['pop-up-window', 'pop-up-window', 'pop-up-window', 'pop-up-window'];
 
-// for (let i = 0; i < popUpWindowsId.length; i++) {
-//   popUpWindowsId[i] += i;
-// }
+const blurIds = ['blur-background', 'blur-background', 'blur-background', 'blur-background'];
 
-// btnsArray.forEach((btn) => {
-//   btn.addEventListener('click', toggle);
-// });
+for (let i = 0; i < blurIds.length; i += 1) {
+  blurIds[i] += i;
+}
 
-// closeBtnArray.forEach((closeBtn) => {
-//   closeBtn.addEventListener('click', toggle);
-// });
+for (let i = 0; i < popUpWindowsId.length; i += 1) {
+  popUpWindowsId[i] += i;
+}
+
+btnsArray.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    if (Number(e.target.id) === 1) {
+      const blurBackground1 = document.getElementById(blurIds[0]);
+      const popup1 = document.getElementById(popUpWindowsId[0]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    } else if (Number(e.target.id) === 2) {
+      const blurBackground1 = document.getElementById(blurIds[1]);
+      const popup1 = document.getElementById(popUpWindowsId[1]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    } else if (Number(e.target.id) === 3) {
+      const blurBackground1 = document.getElementById(blurIds[2]);
+      const popup1 = document.getElementById(popUpWindowsId[2]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    } else if (Number(e.target.id) === 4) {
+      const blurBackground1 = document.getElementById(blurIds[3]);
+      const popup1 = document.getElementById(popUpWindowsId[3]);
+      blurBackground1.classList.toggle('pop-active');
+      popup1.classList.toggle('pop-active');
+
+      if (popup1.classList.contains('pop-active')) {
+        document.body.classList.add('scroll');
+      } else {
+        document.body.classList.remove('scroll');
+      }
+    }
+  });
+});
+
+// Event listener for close pop-up window button
+closeBtnArray.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', toggle);
+});

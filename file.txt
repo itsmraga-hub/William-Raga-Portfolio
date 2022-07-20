@@ -82,3 +82,19 @@
 // closeBtnArray.forEach((closeBtn) => {
 //   closeBtn.addEventListener('click', toggle);
 // });
+
+
+// btnsArray.forEach((btn) => {
+//   btn.addEventListener('click', toggle);
+// });
+
+// closeBtnArray.forEach((closeBtn) => {
+//   closeBtn.addEventListener('click', toggle);
+// });
+
+// btn.addEventListener('click', toggle);
+// close.addEventListener('click', toggle);
+
+
+// const btn = document.getElementById('1');
+// const close = document.querySelector('.head svg');
