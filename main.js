@@ -157,4 +157,5 @@ form.addEventListener('submit', (e) => {
     text = 'Email must be lowercase!!!';
   }
   document.getElementById('err-display').innerHTML = text;
+  document.getElementById('err-display').style.border = '1px solid rgba(255, 0, 0, 0.9)';
 });
