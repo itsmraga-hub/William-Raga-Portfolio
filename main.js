@@ -128,7 +128,7 @@ btnsArray.forEach((btn, i) => {
       modalBG.style.opacity = '0.05';
     });
     modal.style.display = 'block';
-    close.onclick = function () {
+    close.onclick = function Close() {
       modal.style.display = 'none';
     };
   });
