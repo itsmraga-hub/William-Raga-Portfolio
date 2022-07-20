@@ -116,6 +116,8 @@ function createModal(i) {
 const btns = document.querySelectorAll('[data-id="btn-1"]');
 const btnsArray = Array.from(btns);
 
+// Useless text to edit
+// Remove this comments
 btnsArray.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     createModal(i);
@@ -132,4 +134,29 @@ btnsArray.forEach((btn, i) => {
       modal.style.display = 'none';
     };
   });
+});
+
+// Email lowercase letters validation only!!!
+const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+// Regex for email
+// /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+// Get form element by Id
+const form = document.querySelector('#contact-form');
+let text;
+
+// Add event listener for form
+form.addEventListener('submit', (e) => {
+  // Stop submit
+  e.preventDefault();
+
+  // Validate email
+  const mail = form.email.value;
+  if (emailRegExp.test(mail)) {
+    form.submit();
+  } else {
+    text = 'Email must be lowercase!!!';
+  }
+  document.getElementById('err-display').innerHTML = text;
 });
