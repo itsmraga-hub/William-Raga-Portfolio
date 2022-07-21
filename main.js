@@ -159,3 +159,45 @@ form.addEventListener('submit', (e) => {
   document.getElementById('err-display').innerHTML = text;
   document.getElementById('err-display').style.border = '1px solid rgba(255, 0, 0, 0.9)';
 });
+
+// Local storage
+
+// Select all form inputs
+const formInputs = document.querySelectorAll('.input-cls');
+const formInputsArr = Array.from(formInputs);
+
+// Select form sbmit button
+// const submitBtn = document.querySelector('.submit-btn');
+
+window.onload = () => {
+  // select localstorage to check if there is already existing data
+  const localData = localStorage;
+
+  // Check if there is data and if its there, fill the inputs with it
+  if (localData.fullName || localData.email || localData.message) {
+    formInputsArr[0].value = localData.fullName;
+    formInputsArr[1].value = localData.email;
+    formInputsArr[2].value = localData.message;
+  }
+};
+
+// Object to store our collected data
+const ContactForm = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+// Event listener to all input tags to store the data to local storage on input
+
+formInputsArr.forEach((input) => {
+  input.addEventListener('input', () => {
+    ContactForm.fullName = formInputsArr[0].value;
+    ContactForm.email = formInputsArr[1].value;
+    ContactForm.message = formInputsArr[2].value;
+
+    localStorage.setItem('fullName', ContactForm.fullName);
+    localStorage.setItem('email', ContactForm.email);
+    localStorage.setItem('message', ContactForm.message);
+  });
+});
