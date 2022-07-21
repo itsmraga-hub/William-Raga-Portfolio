@@ -159,3 +159,33 @@ form.addEventListener('submit', (e) => {
   document.getElementById('err-display').innerHTML = text;
   document.getElementById('err-display').style.border = '1px solid rgba(255, 0, 0, 0.9)';
 });
+
+// Local storage
+
+const formInputs = document.querySelectorAll('.input-cls');
+const submitBtn = document.querySelector('.submit-btn');
+const formInputsArr = Array.from(formInputs);
+const localData = localStorage;
+console.log(formInputsArr);
+
+const ContactForm = {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+if (localData.fullName || localData.email || localData.message) {
+  formInputsArr[0].value = localData.fullName;
+  formInputsArr[1].value = localData.email;
+  formInputsArr[2].value = localData.message;
+}
+
+submitBtn.addEventListener('click', () => {
+  ContactForm.fullName = formInputsArr[0].value;
+  ContactForm.email = formInputsArr[1].value;
+  ContactForm.message = formInputsArr[2].value;
+
+  localStorage.setItem('fullName', ContactForm.fullName);
+  localStorage.setItem('email', ContactForm.email);
+  localStorage.setItem('message', ContactForm.message);
+});
