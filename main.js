@@ -162,24 +162,31 @@ form.addEventListener('submit', (e) => {
 
 // Local storage
 
+// Select all form inputs
 const formInputs = document.querySelectorAll('.input-cls');
-const submitBtn = document.querySelector('.submit-btn');
 const formInputsArr = Array.from(formInputs);
-const localData = localStorage;
-console.log(formInputsArr);
 
+// Select form sbmit button
+const submitBtn = document.querySelector('.submit-btn');
+
+// select localstorage to check if there is already existing data
+const localData = localStorage;
+
+// Object to store our collected data
 const ContactForm = {
   fullName: '',
   email: '',
   message: '',
 };
 
+// Check if there is data and if its there, fill the inputs with it
 if (localData.fullName || localData.email || localData.message) {
   formInputsArr[0].value = localData.fullName;
   formInputsArr[1].value = localData.email;
   formInputsArr[2].value = localData.message;
 }
 
+// Event listener to submit buton to store the data to local storage before submitting on click
 submitBtn.addEventListener('click', () => {
   ContactForm.fullName = formInputsArr[0].value;
   ContactForm.email = formInputsArr[1].value;
