@@ -47,36 +47,36 @@ const body = document.querySelector('.body-blur');
 
 const ProjectObjects = [
   {
-    projectName: 'Binary Number Calculator',
-    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    projectImg: 'assets/Snapshoot Portfolio.svg',
-    projectTechnologies: ['html', 'css', 'Javascript', ''],
-    projectLive: 'https://itsmraga-hub.github.io/Binary-Number-Converter/',
-    projectSource: 'https://github.com/itsmraga-hub/Binary-Number-Converter',
+    projectName: 'Mialoni Conference page',
+    projectDescription: 'HTML / CSS / JavaScript Module Microverse Capstone Project. The project is a landing page for a group I love and I\'m passionate about - MIALONI. I also had a lot of fun building this project and bringing everything I\'ve learnt together.',
+    projectImg: './assets/mialoni-2.png',
+    projectTechnologies: ['html', 'css', 'Javascript', 'npm'],
+    projectLive: 'https://itsmraga-hub.github.io/Conference-Page/',
+    projectSource: 'https://github.com/itsmraga-hub/Conference-Page',
   },
   {
-    projectName: 'Online Learning Journal',
-    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    projectImg: 'assets/Snapshoot Portfolio.svg',
-    projectTechnologies: ['html', 'Python(Django)', 'css', 'Javascript'],
-    projectLive: 'http://tusomeni.herokuapp.com',
-    projectSource: 'https://github.com/itsmraga-hub/Tusomeni',
+    projectName: 'My Portfolio',
+    projectDescription: 'Welcome to my personal website portfolio where I showcase my skills and accomplishments. Here, you will find an overview of my professional experiences, education, and projects. I am a dynamic and motivated individual with a passion for continuous learning and development. Take a look and see how I can bring value to your organization.',
+    projectImg: 'assets/portfolio-2.png',
+    projectTechnologies: ['html', 'Sass', 'scss', 'Javascript'],
+    projectLive: 'https://itsmraga.netlify.app/',
+    projectSource: 'https://github.com/itsmraga-hub/Portfolio-Website',
   },
   {
-    projectName: 'Elite Blog Page',
-    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    projectImg: 'assets/Snapshoot Portfolio.svg',
-    projectTechnologies: ['html', 'Python(Django)', 'css', 'Javascript'],
-    projectLive: 'https://github.com/William-Raga-Portfolio/',
-    projectSource: 'https://github.com/itsmraga-hub/blog-legendary-eureka',
+    projectName: 'Space Traveler\'s Hub',
+    projectDescription: 'The application allows users to book rockets and join selected space missions working with real life data from the SpaceX API.',
+    projectImg: 'assets/space-2.png',
+    projectTechnologies: ['html', 'React.js', 'css', 'Redux.js'],
+    projectLive: 'https://fanciful-space-travelers.netlify.app/',
+    projectSource: 'https://github.com/itsmraga-hub/Space-Travelers-Hub',
   },
   {
-    projectName: 'Portfolio',
-    projectDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
-    projectImg: 'assets/Snapshoot Portfolio.svg',
-    projectTechnologies: ['', 'html', 'css', 'Javascript'],
-    projectLive: 'https://itsmraga-hub.github.io/William-Raga-Portfolio/',
-    projectSource: 'https://github.com/itsmraga-hub/William-Raga-Portfolio/',
+    projectName: 'Cashverse - A budget App',
+    projectDescription: 'A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. Built with Ruby on Rails.',
+    projectImg: 'assets/cashverse-2.png',
+    projectTechnologies: ['Ruby on rails', 'postgresql', 'html', 'css'],
+    projectLive: 'https://cashverse-raga.onrender.com',
+    projectSource: 'https://github.com/itsmraga-hub/budget-app',
   },
 ];
 
@@ -94,7 +94,7 @@ function createModal(i) {
       </svg></a>
   </div>
   <img src="${ProjectObjects[i].projectImg}" alt=" an image for my project" class="pop-up-img">
-  <p class="pop-up-text roboto white text-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.</p>
+  <p class="pop-up-text roboto white text-400">${ProjectObjects[i].projectDescription}</p>
   <ul class="lists pop-up-list">
     <li class="inter white li-border pop-up-textlist">${ProjectObjects[i].projectTechnologies[0]}</li>
     <li class="inter white li-border pop-up-textlist">${ProjectObjects[i].projectTechnologies[1]}</li>
