@@ -280,6 +280,19 @@ h1 {
   font-size: 20px;
   line-height: 28px;
   vertical-align: top;
+  padding-bottom: 12px;
+}
+
+#about div {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#about a {
+  text-align: center;
+  font-size: 12.5px;
+  text-decoration: none;
 }
 
 hr:hover {
