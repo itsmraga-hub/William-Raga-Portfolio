@@ -48,7 +48,7 @@ const body = document.querySelector('.body-blur');
 const ProjectObjects = [
   {
     projectName: 'Mialoni Conference page',
-    projectDescription: 'HTML / CSS / JavaScript Module Microverse Capstone Project. The project is a landing page for a group I love and I\'m passionate about - MIALONI. I also had a lot of fun building this project and bringing everything I\'ve learnt together.',
+    projectDescription: 'HTML / CSS / JavaScript Module Microverse Capstone Project. The project is a landing page for a group I love and I am passionate about - MIALONI. I also had a lot of fun building this project and bringing everything I have learnt together.',
     projectImg: './assets/mialoni-2.png',
     projectTechnologies: ['html', 'css', 'Javascript', 'npm'],
     projectLive: 'https://itsmraga-hub.github.io/Conference-Page/',
